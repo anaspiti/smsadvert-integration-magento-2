@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+{{License}}
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="SYNAPTECH_Smsalert::smsalert" title="NewSmsAdvert" module="SYNAPTECH_Smsalert" sortOrder="11" resource="SYNAPTECH_Smsalert::smsalert"/>
+        <add id="SYNAPTECH_Smsalert::smsalert_head" title="Settings" module="SYNAPTECH_Smsalert" sortOrder="40"
+             parent="SYNAPTECH_Smsalert::smsalert" resource="SYNAPTECH_Smsalert::smsalert"/>
+        <add id="SYNAPTECH_Smsalert::config" title="Configuration" module="SYNAPTECH_Smsalert" sortOrder="50"
+             action="adminhtml/system_config/edit/section/synaptech_smsalert_configuration"
+             resource="SYNAPTECH_Smsalert::smsalert" parent="SYNAPTECH_Smsalert::smsalert_head" />
+    </menu>
+</config>
